@@ -1,0 +1,38 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    height: 100vh;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gridContainer{
+    height: 500px;
+    width: 500px;
+    display: grid;
+    grid-area: span;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.gridContainer div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    -webkit-box-shadow: 8px 6px 49px 1px rgba(0,0,0,0.48);
+    -moz-box-shadow: 8px 6px 49px 1px rgba(0,0,0,0.48);
+     box-shadow: 8px 6px 49px 1px rgba(0,0,0,0.48);
+}
+.gridContainer div:hover{
+    transition: 0.3s ease-in;
+    -webkit-box-shadow: -10px -5px 300px -122px rgba(0,0,0,0.6);
+    -moz-box-shadow: -10px -5px 300px -122px rgba(0,0,0,0.6);
+    box-shadow: -10px -5px 300px -122px rgba(0,0,0,0.6);
+     
+}
